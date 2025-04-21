@@ -1,0 +1,131 @@
+.user-signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url('https://img.freepik.com/free-photo/young-woman-with-shopping-bags-beautiful-dress_1303-17555.jpg?t=st=1744642275~exp=1744645875~hmac=e3cf064a8a39f3e3b54dbc2134f39457df902dc34e075ce1e689f019c9910d90&w=1060');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* .user-signup-bg-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Assets/shop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    position: fixed;
+} */
+
+.user-signup-box {
+    /* background: rgba(27, 26, 27, 0.39); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0;
+    max-height: 1000px;
+    max-width: 450px;
+   
+}
+.user-signup-h4{
+    color: #fff;
+    letter-spacing: 1px;
+}
+.user-signup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.user-signup-logo-and-input{
+    display: flex;
+    gap: 2rem;
+}
+.user-signup-icons{
+    color: #fff;
+    font-size: x-large;
+}
+.user-signup-input {
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    width: 270px;
+    padding: .7em;
+    background-color: #e1e2e3;
+    /* box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3); */
+    transition: 300ms ease-in-out;
+  }
+  
+  .user-signup-input:focus {
+    background-color: #ffffffe2;
+    /* transform: scale(1.05);
+    box-shadow: 2px 2px 5px #969696, -2px -2px 5px #ffffffe2; */
+  }
+  .checkbox-div{
+    padding-right: rem;
+  }
+  .signup-agree{
+    color: white;
+    margin-left: .5rem;
+  }
+  .signup-lnk{
+    text-decoration: none;
+    color: rgb(61, 132, 248);
+  }
+  .signup-link-a{
+    text-decoration: none;
+  }
+
+  .user-signupBtn {
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    gap: 19px;
+    color: white;
+    background: linear-gradient(to right,rgb(194, 176, 98),rgb(137, 135, 139));
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 7.5px;
+    background-color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  /* .user-signupBtn:hover .arrow {
+    animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  } */

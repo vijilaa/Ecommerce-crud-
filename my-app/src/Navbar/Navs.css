@@ -1,0 +1,122 @@
+.logo {
+    display: flex;
+}
+
+.user-icon {
+    width: 20px;
+    height: 20px;
+    color: black;
+} */
+
+/* Container and navbar base styles */
+/* .navbar-width {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+   */
+  /* Navigation links */
+  /* .navbar-nav .nav-link {
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  } */
+  
+  /* .navbar-nav .nav-link:hover {
+    color: #ffc107 !important; Bootstrap's warning color */
+  /* } */
+  
+  /* Highlighted link (Home) */
+  /* .navbar-nav .nav-link.text-warning {
+    font-weight: bold;
+  } */
+  
+  /* User icon */
+  /* .user-icon {
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .user-icon:hover {
+    color: #ffc107;
+  } */
+  
+  /* Responsive tweaks */
+  /* @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0.5rem 0;
+    }
+  
+    .user-icon {
+      margin-left: 0;
+    }
+  }
+  
+   .navbar-width {
+  width: 100%;
+    display: flex;
+   justify-content: space-between; 
+    align-items: center;
+
+    /* width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+  } */
+  .navbar{
+    height: 8vh;
+  }
+  
+  /* .navbar-brand {
+    flex: 1;
+  } */
+/*   
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex: 5;
+  } */
+
+  .navbar-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 5;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  
+  .user-icon {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* .navbar-collapse {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+   */
+  .navbar-collapse > .navbar-nav {
+    justify-content: center;
+  } 
+  
+  .navbar-collapse > div {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }

@@ -1,0 +1,239 @@
+.user-login-page {
+    display: flex;
+    height: 100%;
+    background-image: url('https://wallpaperbat.com/img/799592-30best-online-shopping-photo-100-free-download-pexels-stock-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .user-login-box {
+    background-image: url('https://wallpaperbat.com/img/799592-30best-online-shopping-photo-100-free-download-pexels-stock-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 0;
+    width: 500px;
+    box-shadow: 2px 2px 5px #0a0808e3,-8px -8px 8px #521c1c41;
+    filter: blur(px);
+    -webkit-filter: blur(1px);
+    
+} */
+
+.user-login-box {
+    position: relative;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #0a0808e3, -8px -8px 8px #521c1c41;
+  }
+
+  .user-login-blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpaperbat.com/img/799592-30best-online-shopping-photo-100-free-download-pexels-stock-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px); /* Apply blur here */
+    z-index: 1;
+    opacity: 0.8; /* Optional: Dim the background */
+  }
+  .user-login-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+
+  }
+
+.user-login-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.user-login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+    border: 2px solid rgb(53, 50, 50);
+    
+}
+
+.user-login-h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+}
+
+.user-login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    
+}
+
+
+.user-input {
+    margin-bottom: 15px;
+    width: 250px;
+    max-width: 500px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 0px 1px 5px rgb(221, 220, 220);
+    /* color: #fff; */
+}
+
+
+.user-input::placeholder {
+    /* color: white; */
+}
+
+.user-login-checkbox {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 200px; */
+}
+
+.user-login-checkbox-span {
+    margin-right: 170px;
+}
+
+.user-login-p {
+    color: antiquewhite;
+    padding-top: 12px;
+    margin-left: 3px;
+}
+
+.user-login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    /* display: inline-block; */
+    width: 250px;
+    max-width: 500px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    /* will-change: box-shadow, transform; */
+    background: radial-gradient(100% 100% at 100% 0%, #3496b1 0%, #4b4e4d 100%);
+    /* box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 2em; */
+    border-radius: 2em;
+    color: #fff;
+    height: 2.6em;
+
+}
+
+.user-login-btn:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #302f2f;
+
+}
+
+
+.user-login-forgetpass {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 90px;
+    font-weight: 600;
+    color: #547dce;
+
+}
+
+/* .user-login-forgetpass:hover {
+    transform: translateY(-0.1em);
+} */
+
+.user-login-p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 1.5px;
+
+}
+
+/* social media */
+
+.user-login-socials-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 5px 40px;
+    margin: auto;
+
+}
+
+.user-login-social {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(194, 194, 194);
+    color: white;
+    background-color: white;
+}
+
+.twitter:hover {
+    background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
+}
+
+.facebook:hover {
+    background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+}
+
+.google-plus:hover {
+    background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+}
+
+.user-login-footer-p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.user-login-span {
+    color: #3679ff;
+    cursor: pointer;
+}
+
+
+.user-login-registerhere {
+    text-decoration: none;
+    font-size: large;
+
+}
+
+.shopme-img {
+    width: 100%;
+    height: 95vh;
+}

@@ -1,0 +1,66 @@
+/* General Resets */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Hero Section */
+  section.bg-light {
+    background: linear-gradient(to right, #fffbe6, #ffffff);
+  }
+  
+  section.bg-light h1 {
+    color: #333;
+  }
+  
+  section.bg-light p {
+    color: #666;
+  }
+  
+  /* Featured Categories */
+  .card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  /* Product Card Styling */
+  .card .btn-outline-warning {
+    border-radius: 25px;
+  }
+  
+  .card .card-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .card .text-warning {
+    margin-right: 3px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 767px) {
+    .card img {
+      height: 180px;
+    }
+  
+    .card-title {
+      font-size: 1rem;
+    }
+  }
+  

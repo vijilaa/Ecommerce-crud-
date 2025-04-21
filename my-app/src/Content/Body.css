@@ -1,0 +1,70 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+
+
+}
+
+.landing-container {
+  display: flex;
+  height: 94vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #69676750;
+  border:none;
+}
+
+.left-content {
+  flex: .5;
+  padding: 100px 60px;
+  z-index: 2;
+  background-color: #d6d4d41e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.left-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #696767;
+  max-width: 500px;
+}
+
+.cta-button {
+  background-color: #f37c7c;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e95e5e;
+}
+
+/* Diagonal image section */
+.right-image-diagonal {
+  flex: 1;
+  background-image: url('https://wallpapers.com/images/hd/e-commerce-1920-x-1080-wallpaper-tb4uqckgoo0883zw.jpg');
+  /* Replace with your own image */
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(30% 0%, 100% 0%, 150% 100%, 0% 100%);
+  height: 100%;
+
+  box-shadow: 2px 2px 5px #b1b1b1e3,
+    -8px -8px 8px #ffffff41;
+}
