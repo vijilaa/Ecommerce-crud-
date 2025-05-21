@@ -1,0 +1,12 @@
+.input-line{
+    width: 500px;
+    height: 45px;
+
+}
+.user-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+    
+}

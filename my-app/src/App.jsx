@@ -7,6 +7,9 @@ import Login from './Login/Login'
 import Signup from './signup/Signup'
 import Home from './Pages/Home'
 import Footer from './Footer/Footer'
+import Forgot from './Forgot/Forgot'
+import About from './about/About'
+import Categories from './detailpg/Categories'
 function App() {
 
 
@@ -15,8 +18,11 @@ function App() {
 
     <BrowserRouter>
       <Routes>
-        <Route path='/home' element={<> <Home></Home></>}></Route>
+        <Route path='/home' element={<><Navs></Navs> <Home></Home> <Footer></Footer></>}></Route>
         <Route path='/footer' element={<><Footer></Footer></>}></Route>
+        <Route path='/forgot' element={<><Forgot></Forgot></>}></Route>
+        <Route path='/about'element={<><Navs></Navs><About/><Footer></Footer></>}></Route>
+        <Route path='/detail' element={<><Categories></Categories></>}></Route>
         <Route
           path='/Navb'
           element={
@@ -32,6 +38,7 @@ function App() {
             <>
               <Navs />
               <Signup></Signup>
+              <Footer/>
             </>}
         ></Route>
         <Route
@@ -40,6 +47,7 @@ function App() {
             <>
               <Navs />
               <Login />
+              <Footer/>
             </>
           }></Route>
         <Route
@@ -48,6 +56,7 @@ function App() {
             <>
               <Navs />
               <Body />
+              <Footer/>
             </>
           }>
 

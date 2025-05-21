@@ -1,40 +1,70 @@
-.user-signup-page {
+/* .user-signup-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     background-image: url('https://img.freepik.com/free-photo/young-woman-with-shopping-bags-beautiful-dress_1303-17555.jpg?t=st=1744642275~exp=1744645875~hmac=e3cf064a8a39f3e3b54dbc2134f39457df902dc34e075ce1e689f019c9910d90&w=1060');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-/* .user-signup-bg-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("./Assets/shop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    position: fixed;
 } */
 
+.user-signup-page {
+  display: flex;
+  height: 100%;
+  background-image: url('https://wallpaperbat.com/img/484176-business-laptop-wallpaper-top-free-business-laptop-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .user-signup-box {
+position: relative;
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px #0a0808e3, -8px -8px 8px #521c1c41;
+}
+.user-signup-h4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+}
+
+.user-signup-blur-bg {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://wallpaperbat.com/img/868255-an-in-depth-guide-to-prestashop-for-e-commerce.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px); /* Apply blur here */
+  z-index: 1;
+  opacity: 0.3; /* Optional: Dim the background */
+}
+/* .user-signup-box { */
     /* background: rgba(27, 26, 27, 0.39); */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     width: 100%;
     padding: 0;
-    max-height: 1000px;
+    max-height: 100px;
     max-width: 450px;
    
-}
+} */
 .user-signup-h4{
     color: #fff;
     letter-spacing: 1px;
@@ -129,3 +159,12 @@
       opacity: 1;
     }
   } */
+  .error-msg {
+    color: red;
+    font-size: 0.85rem;
+ 
+    margin-left: 3.1rem; /* aligns nicely with input text */
+    font-weight: 500;
+  }
+  
+  

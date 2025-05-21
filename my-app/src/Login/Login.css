@@ -1,7 +1,7 @@
 .user-login-page {
     display: flex;
     height: 100%;
-    background-image: url('https://wallpaperbat.com/img/799592-30best-online-shopping-photo-100-free-download-pexels-stock-photo.jpg');
+    background-image: url('https://wallpaperbat.com/img/868223-free-download-e-commerce-web-designing-development-company-in-india-venture-care-1920x1080-for-your-desktop-mobile-tablet-explore-ecommerce-wallpaper.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://wallpaperbat.com/img/799592-30best-online-shopping-photo-100-free-download-pexels-stock-photo.jpg');
+    background-image: url('https://wallpaperbat.com/img/484194-business-it-technologies-online-computer-wallpaper-hd-desktop-and-mobile-background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
     height: 80px;
     border-radius: 50px;
     object-fit: cover;
-    border: 2px solid rgb(53, 50, 50);
+    border: 2px solid rgb(116, 109, 109);
     
 }
 
@@ -130,16 +130,14 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    /* display: inline-block; */
+
     width: 250px;
     max-width: 500px;
     outline: 0;
     border: 0;
     cursor: pointer;
-    /* will-change: box-shadow, transform; */
     background: radial-gradient(100% 100% at 100% 0%, #3496b1 0%, #4b4e4d 100%);
-    /* box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
-    padding: 0 2em; */
+
     border-radius: 2em;
     color: #fff;
     height: 2.6em;
@@ -163,9 +161,7 @@
 
 }
 
-/* .user-login-forgetpass:hover {
-    transform: translateY(-0.1em);
-} */
+
 
 .user-login-p1 {
     display: flex;
@@ -176,7 +172,6 @@
 
 }
 
-/* social media */
 
 .user-login-socials-container {
     width: fit-content;
