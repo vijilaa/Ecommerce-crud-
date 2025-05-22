@@ -10,6 +10,7 @@ import Footer from './Footer/Footer'
 import Forgot from './Forgot/Forgot'
 import About from './about/About'
 import Categories from './detailpg/Categories'
+import CategoryPage from './Pages/CategoryPage/CategoryPage'
 function App() {
 
 
@@ -18,6 +19,7 @@ function App() {
 
     <BrowserRouter>
       <Routes>
+        <Route path='/category/:name' element={<><CategoryPage/></>}></Route>
         <Route path='/home' element={<><Navs></Navs> <Home></Home> <Footer></Footer></>}></Route>
         <Route path='/footer' element={<><Footer></Footer></>}></Route>
         <Route path='/forgot' element={<><Forgot></Forgot></>}></Route>
