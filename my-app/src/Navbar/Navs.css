@@ -59,3 +59,77 @@ font-style: italic;
 .modal-content {
   margin: auto;
 }
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 18px;
+
+  
+}
+
+.user-icon {
+    width: 20px;
+    height: 20px;
+    color: black;
+} 
+
+.about{
+  text-decoration: none;
+}
+.navbar-brand{
+  font-weight: bold;
+  margin-left: -25px; 
+  z-index: 1;          
+  background: white;  
+  padding-left: 5px;
+
+}
+
+  .navbar{
+    height: 8vh;
+  }
+  
+
+
+  .navbar-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 5;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  
+  .user-icon {
+    font-size: 20px;
+    color: #333;
+  }
+  
+
+  .navbar-collapse > .navbar-nav {
+    justify-content: center;
+  } 
+  
+  .navbar-collapse > div {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logo-name-div{
+    display: flex;
+    align-items: center; /* Vertically center items */
+     gap: 0;
+     position: relative;
+  }
+
+  .span-mini{
+    color: rgb(26, 107, 194);
+  }
+  .span-zoo{
+    color: rgba(0, 0, 0, 0.722);
+  }

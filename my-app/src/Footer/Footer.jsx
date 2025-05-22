@@ -14,7 +14,7 @@ const Footer = () => {
         <footer className="bg-dark text-white pt-4">
             <div className="container">
                 <div className="row text-center text-md-start">
-                    {/* Brand & Social */}
+                 
                     <div className="col-md-3 mb-4">
                         <a className="navbar-brand text-white" href="#" style={{ fontSize: '1.5rem' }}>
                             OUR <span className="fw-bold">SHOP</span>
@@ -38,7 +38,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Quick Links */}
+               
                     <div className="col-md-3 mb-4">
                         <h5>Quick Links</h5>
                         <ul className="list-unstyled text-white-50 footer-font">
@@ -50,7 +50,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Terms & Policies */}
+                
                     <div className="col-md-3 mb-4">
                         <h5>Terms & Policies</h5>
                         <ul className="list-unstyled text-white-50 footer-font">
@@ -60,7 +60,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Contact Info */}
+                
                     <div className="col-md-3 mb-4">
                         <h5>Get In Touch</h5>
                         <ul className="list-unstyled text-white-50 footer-font">
@@ -69,11 +69,9 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
+         <hr className="text-white" style={{ opacity: 0.2 }} />
 
-                {/* Divider */}
-                <hr className="text-white" style={{ opacity: 0.2 }} />
-
-                {/* Copyright */}
+          
                 <div className="text-center pb-3">
                     <p className="text-white-50 footer-font m-0">© 2024 BLOG SPHERE. All rights reserved.</p>
                 </div>

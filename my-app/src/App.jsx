@@ -10,6 +10,7 @@ import Footer from './Footer/Footer'
 import Forgot from './Forgot/Forgot'
 import About from './about/About'
 import Categories from './detailpg/Categories'
+import ProtectedRoute from './Navbar/ProtectedRoute'
 function App() {
 
 
@@ -21,46 +22,13 @@ function App() {
         <Route path='/home' element={<><Navs></Navs> <Home></Home> <Footer></Footer></>}></Route>
         <Route path='/footer' element={<><Footer></Footer></>}></Route>
         <Route path='/forgot' element={<><Forgot></Forgot></>}></Route>
-        <Route path='/about'element={<><Navs></Navs><About/><Footer></Footer></>}></Route>
+        <Route path='/about' element={<><Navs></Navs><About /><Footer></Footer></>}></Route>
         <Route path='/detail' element={<><Categories></Categories></>}></Route>
-        <Route
-          path='/Navb'
-          element={
-            <>
-              <Navs />
-            </>
-          }>
-
-        </Route>
-
-        <Route path='/sign'
-          element={
-            <>
-              <Navs />
-              <Signup></Signup>
-              <Footer/>
-            </>}
-        ></Route>
-        <Route
-          path='/log'
-          element={
-            <>
-              <Navs />
-              <Login />
-              <Footer/>
-            </>
-          }></Route>
-        <Route
-          path='/'
-          element={
-            <>
-              <Navs />
-              <Body />
-              <Footer/>
-            </>
-          }>
-
-        </Route>
+        <Route path='/pro' element={<ProtectedRoute>  </ProtectedRoute>} />
+        <Route path='/Navb' element={<> <Navs /> </>}> </Route>
+        <Route path='/sign' element={<> <Navs /> <Signup></Signup> <Footer /></>}></Route>
+        <Route path='/log' element={<>  <Navs />  <Login /> <Footer /></>}></Route>
+        <Route path='/' element={<>  <Navs /><Body /><Footer /></>}></Route>
 
       </Routes>
     </BrowserRouter>
