@@ -19,6 +19,7 @@ function App() {
 
     <BrowserRouter>
       <Routes>
+        <Route path='/category/:name' element={<><CategoryPage/></>}></Route>
         <Route path='/home' element={<><Navs></Navs> <Home></Home> <Footer></Footer></>}></Route>
         <Route path='/footer' element={<><Footer></Footer></>}></Route>
         <Route path='/forgot' element={<><Forgot></Forgot></>}></Route>
