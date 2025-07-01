@@ -1,62 +1,8 @@
-// import React from 'react'
-// import "./Forgot.css"
-
-// const Forgot = () => {
-//    if (!formData.password) {
-//     formError.password = "Password is required";
-//     isValid = false;
-//   } else if (formData.password.length < 6) {
-//     formError.password = "Password must be at least 6 characters";
-//     isValid = false;
-//   }
-
-//   if (!formData.repeatpassword) {
-//     formError.repeatpassword = "Repeat password is required";
-//     isValid = false;
-//   } else if (formData.repeatpassword.length < 6) {
-//     formError.repeatpassword = "Repeat password must be at least 6 characters";
-//     isValid = false;
-//   } else if (formData.password !== formData.repeatpassword) {
-//     formError.repeatpassword = "Passwords do not match";
-//     isValid = false;
-//   }
-//   return (
-//     <div>
-//       <form onSubmit={handleSubmit}>
-//         <div className="user-form">
-//           <input
-//             type='email'
-//             className='form-control input-line'
-//             placeholder='Email'
-//             name="email"
-//             value={formData.email}
-//             onChange={handleChange} />
-//           <input
-//             type='Password'
-//             className='form-control input-line mt-3'
-//             placeholder='New Password'
-//             name="password"
-//             value={formData.password}
-//             onChange={handleChange} />
-//           <input
-//             type='password'
-//             className='form-control input-line mt-3'
-//             placeholder='Confirm Password'
-//             name="password"
-//             value={formData.password}
-//             onChange={handleChange} />
-//           <button className='btn btn-secondary mt-3 ' type='submit'>Continue</button>
-//         </div>
-//       </form>
-//     </div>
-//   )
-// }
-
-// export default Forgot
 
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, } from 'react';
 import "./Forgot.css";
+import { useNavigate } from 'react-router-dom';
 
 const Forgot = () => {
   const [formData, setFormData] = useState({
@@ -67,10 +13,11 @@ const Forgot = () => {
 
   const [formError, setFormError] = useState({});
   const [oldPassword, setOldPassword] = useState('');
+ const navigate = useNavigate();
 
   // Load the existing password from localStorage when the component mounts
   useEffect(() => {
-    const savedPassword = localStorage.getItem('userPassword');
+    const savedPassword = localStorage.getItem('password');
     if (savedPassword) {
       setOldPassword(savedPassword);
     }
@@ -105,10 +52,10 @@ const Forgot = () => {
 
     if (isValid) {
       // Replace old password with the new confirmed password
-      localStorage.setItem('userPassword', formData.repeatpassword);
+      localStorage.setItem('password', formData.repeatpassword);
 
       alert("Password has been updated successfully!");
-
+      navigate("/log")
       // Clear the form
       setFormData({
         email: '',
@@ -120,39 +67,44 @@ const Forgot = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <div className="user-form">
-          <input
-            type="email"
-            className="form-control input-line"
-            placeholder="Email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          <input
-            type="password"
-            className="form-control input-line mt-3"
-            placeholder="New Password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-          />
-          {formError.password && <p className="error">{formError.password}</p>}
-          <input
-            type="password"
-            className="form-control input-line mt-3"
-            placeholder="Confirm Password"
-            name="repeatpassword"
-            value={formData.repeatpassword}
-            onChange={handleChange}
-          />
-          {formError.repeatpassword && <p className="error">{formError.repeatpassword}</p>}
-          <button className="btn btn-secondary mt-3" type="submit">
-            Continue
-          </button>
-        </div>
-      </form>
+      <div className="container-fluid">
+
+        <form onSubmit={handleSubmit}>
+
+          <div className="user-form">
+            <h1 className='Text-input'>Forgot!</h1>
+            <input
+              type="email"
+              className="form-control input-line"
+              placeholder="Email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            <input
+              type="password"
+              className="form-control input-line mt-3"
+              placeholder="Password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+            />
+            {formError.password && <p className="error">{formError.password}</p>}
+            <input
+              type="password"
+              className="form-control input-line mt-3"
+              placeholder="Repeat Password"
+              name="repeatpassword"
+              value={formData.repeatpassword}
+              onChange={handleChange}
+            />
+            {formError.repeatpassword && <p className="error">{formError.repeatpassword}</p>}
+            <button className="btn btn-outline-dark mt-3" type="submit">
+              Continue
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

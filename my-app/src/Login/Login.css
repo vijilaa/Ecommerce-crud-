@@ -1,7 +1,7 @@
 .user-login-page {
     display: flex;
     height: 100%;
-    background-image: url('https://wallpaperbat.com/img/868223-free-download-e-commerce-web-designing-development-company-in-india-venture-care-1920x1080-for-your-desktop-mobile-tablet-explore-ecommerce-wallpaper.jpg');
+    background-image: url(../assets/Images/ecom-2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,19 +11,7 @@
     align-items: center;
 }
 
-/* .user-login-box {
-    background-image: url('https://wallpaperbat.com/img/799592-30best-online-shopping-photo-100-free-download-pexels-stock-photo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    padding: 0;
-    width: 500px;
-    box-shadow: 2px 2px 5px #0a0808e3,-8px -8px 8px #521c1c41;
-    filter: blur(px);
-    -webkit-filter: blur(1px);
-    
-} */
+
 
 .user-login-box {
     position: relative;

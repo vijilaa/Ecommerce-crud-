@@ -1,13 +1,4 @@
-/* .user-signup-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('https://img.freepik.com/free-photo/young-woman-with-shopping-bags-beautiful-dress_1303-17555.jpg?t=st=1744642275~exp=1744645875~hmac=e3cf064a8a39f3e3b54dbc2134f39457df902dc34e075ce1e689f019c9910d90&w=1060');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+
 
 .user-signup-page {
   display: flex;
@@ -52,19 +43,7 @@ position: relative;
   z-index: 1;
   opacity: 0.3; /* Optional: Dim the background */
 }
-/* .user-signup-box { */
-    /* background: rgba(27, 26, 27, 0.39); */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    width: 100%;
-    padding: 0;
-    max-height: 100px;
-    max-width: 450px;
-   
-} */
+
 .user-signup-h4{
     color: #fff;
     letter-spacing: 1px;
@@ -91,14 +70,13 @@ position: relative;
     width: 270px;
     padding: .7em;
     background-color: #e1e2e3;
-    /* box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3); */
+
     transition: 300ms ease-in-out;
   }
   
   .user-signup-input:focus {
     background-color: #ffffffe2;
-    /* transform: scale(1.05);
-    box-shadow: 2px 2px 5px #969696, -2px -2px 5px #ffffffe2; */
+
   }
   .checkbox-div{
     padding-right: rem;
@@ -144,21 +122,7 @@ position: relative;
     border-radius: 50%;
   }
   
-  /* .user-signupBtn:hover .arrow {
-    animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
-  
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-10px);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  } */
+
   .error-msg {
     color: red;
     font-size: 0.85rem;

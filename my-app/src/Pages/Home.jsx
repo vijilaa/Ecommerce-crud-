@@ -6,6 +6,14 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
 
+// Category to image mapping
+const categoryImages = {
+  "men's clothing": "https://tse4.mm.bing.net/th?id=OIP.NVwvQr0NaKhY2CVnqvEFZgHaE8&pid=Api&P=0&h=180",
+  "women's clothing": "https://tse4.mm.bing.net/th?id=OIP.M8zOmLVOnBUUnAlvwd624AHaE8&pid=Api&P=0&h=180",
+  "jewelery": "https://images.pexels.com/photos/13918657/pexels-photo-13918657.jpeg?auto=compress&cs=tinysrgb&w=300",
+  "electronics": "https://media.istockphoto.com/id/918381560/photo/eletronic-department-store-with-bokeh-blurred-background.jpg?b=1&s=612x612&w=0&k=20&c=tWPGxzh6vBPIZICNqZmqE8fT-ioecJEJfh9nz1omibA=",
+};
+
 const Home = () => {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -28,7 +36,7 @@ const Home = () => {
         <div className="container">
           <h1 className="display-5 fw-bold">Discover the Latest Trends</h1>
           <p className="lead">Shop the best products at unbeatable prices.</p>
-          <button className="btn btn-warning btn-lg mt-3">Shop Now</button>
+          <button className="btn btn-lg mt-3">Shop Now</button>
         </div>
       </section>
 
@@ -45,9 +53,10 @@ const Home = () => {
                   onClick={() => navigate(`/category/${encodeURIComponent(category)}`)}
                 >
                   <img
-                    src={`https://source.unsplash.com/300x200/?${category}`}
+                    src={categoryImages[category] || "https://via.placeholder.com/300x150.png?text=Category"}
                     className="card-img-top"
                     alt={`Category: ${category}`}
+                    style={{ height: "150px", objectFit: "cover" }}
                   />
                   <div className="card-body">
                     <h5 className="card-title text-capitalize">{category}</h5>
