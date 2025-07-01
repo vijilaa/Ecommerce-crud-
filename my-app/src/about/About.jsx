@@ -7,13 +7,14 @@ import {
   faTags,
   faHeadset,
 } from '@fortawesome/free-solid-svg-icons';
+import ecom from "../assets/Images/ecom-1.jpg"
 
 const About = () => {
   return (
     <section className="about-us-section">
       <div className="con container">
         <div className="about-header">
-          <h1>About ShopEase</h1>
+          <h1>About Mini ZOO</h1>
           <p>Your trusted partner in seamless online shopping.</p>
         </div>
 
@@ -54,7 +55,7 @@ const About = () => {
 
         <div className="about-image">
           <img
-            src="https://wallpaperbat.com/img/868202-e-commerce-wallpaper.jpg"
+            src={ecom}
             alt="Our Team"
           />
         </div>

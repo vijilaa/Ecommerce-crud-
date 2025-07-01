@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Login.css"
-// import shopme from "../assets/images/shop.jpg"
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -114,7 +113,7 @@ function Login() {
                 </span>
                 <button className='user-login-btn' type="submit">LOGIN</button>
               </form>
-              <Link to="" className="user-login-forgetpass mt-1" style={{ textDecoration: "none" }}>
+              <Link to="/Forgot" className="user-login-forgetpass mt-1" style={{ textDecoration: "none" }}>
                 Forgot password?
               </Link>
               <p className='user-login-p1 mt-3'>or login with</p>

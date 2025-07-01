@@ -5,7 +5,9 @@ body {
   
   /* Hero Section */
   section.bg-light {
-    background: linear-gradient(to right, #fffbe6, #ffffff);
+    /* background: linear-gradient(to right, #fffbe6, #ffffff); */
+     background-repeat: no-repeat;
+background-image: url(../assets/Images/bgimg.jpg);
   }
   
   section.bg-light h1 {
@@ -63,4 +65,26 @@ body {
       font-size: 1rem;
     }
   }
-  
+.category-card {
+  border: none;
+  transition: transform 0.2s ease;
+  padding: 20px;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-image {
+  height: 180px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+}
+
+.btn-lg{
+    background: linear-gradient(to right,rgb(114, 172, 199),rgb(226, 234, 247));
+ 
+}

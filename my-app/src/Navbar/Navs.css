@@ -17,7 +17,7 @@ font-style: italic;
 }
 
   .navbar{
-    height: 8vh;
+    height: 10vh;
   }
   
 
@@ -58,4 +58,164 @@ font-style: italic;
 
 .modal-content {
   margin: auto;
+}
+.logo {
+  width: 150px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 18px;
+
+  
+}
+
+.user-icon {
+    width: 20px;
+    height: 20px;
+    color: black;
+} 
+
+.about{
+  text-decoration: none;
+}
+.navbar-brand{
+  font-weight: bold;
+  margin-left: -40px; 
+  /* z-index: 1;           */
+  /* background: white;   */
+  padding-left: 5px;
+
+}
+
+  .navbar{
+    height: 8vh;
+  }
+  
+
+
+  .navbar-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 5;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  
+  .user-icon {
+    font-size: 20px;
+    color: #333;
+  }
+  
+
+  .navbar-collapse > .navbar-nav {
+    justify-content: center;
+  } 
+  
+  .navbar-collapse > div {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logo-name-div{
+    display: flex;
+    align-items: center; /* Vertically center items */
+     gap: 0;
+     position: relative;
+  }
+
+  .span-mini{
+    color: rgb(26, 107, 194);
+  }
+  .span-zoo{
+    color: rgba(0, 0, 0, 0.722);
+  }
+
+/* Button spacing and sizing */
+
+.modal-body 
+.btn-admin,.btn-seller,.btn-user {
+  min-width: 120px;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect */
+.modal-body 
+
+.btn-admin:hover,
+.btn-seller:hover,
+.btn-user:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.admin-button-overall-div,
+.seller-button-overall-div,
+.user-button-overall-div{
+   border: 2px solid rgba(0, 0, 0, 0.611);
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), inset 0 0 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.admin-button-logo-img{
+  margin-bottom: 2px;
+}
+
+.admin-button-overall-div:hover,
+.seller-button-overall-div:hover,
+.user-button-overall-div:hover {
+  transform: translateY(-5px) rotateX(5deg);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25), inset 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Admin Button */
+.btn-admin {
+  /* background-color: #dc3545; */
+  background:linear-gradient(to right, #53BAED, #FCFFFD);
+  color: black;
+  border:1px solid gray;
+}
+
+.btn-admin:hover {
+  background-color: #bb2d3b;
+}
+
+/* Seller Button */
+.btn-seller {
+  background:linear-gradient(180deg,#FCFFFD, #53BAED );
+  color: black;
+  border: 1px solid gray;
+}
+
+.btn-seller:hover {
+  background-color: #e0a800;
+}
+
+/* User Button */
+.btn-user {
+  background:linear-gradient(90deg, #53BAED,#FCFFFD,#53BAED);
+  color: black;
+  border: 1px solid gray;
+}
+
+.btn-user:hover {
+  background-color: #084298;
+}
+
+/* Close button styling */
+.btn-close {
+  filter: brightness(0.5);
 }
