@@ -1,64 +1,83 @@
 .logo {
-    display: flex;
+  display: flex;
 }
 
 .user-icon {
-    width: 20px;
-    height: 20px;
-    color: black;
-} 
+  width: 20px;
+  height: 20px;
+  color: black;
+}
 
-.about{
+.about {
   text-decoration: none;
 }
-.navbar-brand{
+
+.navbar-brand {
   font-weight: bold;
-font-style: italic;
+  font-style: italic;
 }
 
-  .navbar{
-    height: 10vh;
-  }
-  
+.navbar {
+  min-height: 90px;
+    background-color: #fff; /* or any desired color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 
-  .navbar-nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex: 5;
-  }
-  
-  .navbar-nav .nav-item {
-    margin: 0 10px;
-  }
-  
-  .user-icon {
-    font-size: 20px;
-    color: #333;
-  }
-  
+}
+.navbar-collapse {
+  background-color: #fff; /* Same as navbar background */
+  padding: 1rem;
+}
 
-  .navbar-collapse > .navbar-nav {
-    justify-content: center;
-  } 
-  
-  .navbar-collapse > div {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+@media (max-width: 576px) {
+  .navbar-collapse {
+    background-color: #fff;
+    width: 100%;
   }
+}
+
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 5;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.user-icon {
+  font-size: 20px;
+  color: #333;
+}
+
+
+
+/* .navbar-collapse.navbar-nav {
+  justify-content: center;
+} */
+
+.navbar-collapse>div {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Center modal vertically and horizontally */
 .modal-dialog {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Full height of viewport */
+  min-height: 100vh;
+  /* Full height of viewport */
 }
 
 .modal-content {
   margin: auto;
 }
+
 .logo {
   width: 150px;
   height: 60px;
@@ -66,78 +85,82 @@ font-style: italic;
   border-radius: 50%;
   margin-top: 18px;
 
-  
+
 }
 
 .user-icon {
-    width: 20px;
-    height: 20px;
-    color: black;
-} 
+  width: 20px;
+  height: 20px;
+  color: black;
+}
 
-.about{
+.about {
   text-decoration: none;
 }
-.navbar-brand{
+
+.navbar-brand {
   font-weight: bold;
-  margin-left: -40px; 
+  margin-left: -40px;
   /* z-index: 1;           */
   /* background: white;   */
   padding-left: 5px;
 
 }
 
-  .navbar{
-    height: 8vh;
-  }
-  
+.navbar {
+  height: 8vh;
+}
 
 
-  .navbar-nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex: 5;
-  }
-  
-  .navbar-nav .nav-item {
-    margin: 0 10px;
-  }
-  
-  .user-icon {
-    font-size: 20px;
-    color: #333;
-  }
-  
 
-  .navbar-collapse > .navbar-nav {
-    justify-content: center;
-  } 
-  
-  .navbar-collapse > div {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 5;
+}
 
-  .logo-name-div{
-    display: flex;
-    align-items: center; /* Vertically center items */
-     gap: 0;
-     position: relative;
-  }
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
 
-  .span-mini{
-    color: rgb(26, 107, 194);
-  }
-  .span-zoo{
-    color: rgba(0, 0, 0, 0.722);
-  }
+.user-icon {
+  font-size: 20px;
+  color: #333;
+}
+
+
+.navbar-collapse>.navbar-nav {
+  justify-content: center;
+}
+
+.navbar-collapse>div {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo-name-div {
+  display: flex;
+  align-items: center;
+  /* Vertically center items */
+  gap: 0;
+  position: relative;
+}
+
+.span-mini {
+  color: rgb(26, 107, 194);
+}
+
+.span-zoo {
+  color: rgba(0, 0, 0, 0.722);
+}
 
 /* Button spacing and sizing */
 
-.modal-body 
-.btn-admin,.btn-seller,.btn-user {
+.modal-body .btn-admin,
+.btn-seller,
+.btn-user {
   min-width: 120px;
   padding: 0.4rem 1rem;
   font-weight: 600;
@@ -148,9 +171,7 @@ font-style: italic;
 }
 
 /* Button hover effect */
-.modal-body 
-
-.btn-admin:hover,
+.modal-body .btn-admin:hover,
 .btn-seller:hover,
 .btn-user:hover {
   transform: scale(1.05);
@@ -159,8 +180,8 @@ font-style: italic;
 
 .admin-button-overall-div,
 .seller-button-overall-div,
-.user-button-overall-div{
-   border: 2px solid rgba(0, 0, 0, 0.611);
+.user-button-overall-div {
+  border: 2px solid rgba(0, 0, 0, 0.611);
   padding: 10px;
   border-radius: 12px;
   background: #fff;
@@ -169,7 +190,8 @@ font-style: italic;
   transform-style: preserve-3d;
   perspective: 1000px;
 }
-.admin-button-logo-img{
+
+.admin-button-logo-img {
   margin-bottom: 2px;
 }
 
@@ -184,9 +206,9 @@ font-style: italic;
 /* Admin Button */
 .btn-admin {
   /* background-color: #dc3545; */
-  background:linear-gradient(to right, #53BAED, #FCFFFD);
+  background: linear-gradient(to right, #53BAED, #FCFFFD);
   color: black;
-  border:1px solid gray;
+  border: 1px solid gray;
 }
 
 .btn-admin:hover {
@@ -195,7 +217,7 @@ font-style: italic;
 
 /* Seller Button */
 .btn-seller {
-  background:linear-gradient(180deg,#FCFFFD, #53BAED );
+  background: linear-gradient(180deg, #FCFFFD, #53BAED);
   color: black;
   border: 1px solid gray;
 }
@@ -206,7 +228,7 @@ font-style: italic;
 
 /* User Button */
 .btn-user {
-  background:linear-gradient(90deg, #53BAED,#FCFFFD,#53BAED);
+  background: linear-gradient(90deg, #53BAED, #FCFFFD, #53BAED);
   color: black;
   border: 1px solid gray;
 }

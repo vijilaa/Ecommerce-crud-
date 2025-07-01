@@ -43,7 +43,7 @@ function Navs() {
   return (
 
     <div className="container">
-      <nav className="navbar navbar-expand-sm navbar-light bg-white navbar-width">
+      <nav className="navbar navbar-expand-sm bg-white shadow-sm px-3 navbar-width">
         <div className="logo-name-div">
           <img className="logo" src={log} alt="logo" />
           <Link to="/" className="navbar-brand text-dark mb-0" style={{ fontSize: "1.5rem" }}>
@@ -64,7 +64,7 @@ function Navs() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="mynavbar">
+        <div className="collapse navbar-collapse " id="mynavbar">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className=" nav-link text-dark " href="/log"
@@ -74,7 +74,7 @@ function Navs() {
           </ul>
 
 
-          <div className="d-flex ms-auto align-items-center">
+          <div className="d-flex justify-content-center mt-3">
             <FontAwesomeIcon
               icon={faUser}
               className="user-icon"
