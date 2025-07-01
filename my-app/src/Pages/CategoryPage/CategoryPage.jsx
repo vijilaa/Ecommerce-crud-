@@ -10,6 +10,7 @@ const CategoryPage = () => {
   useEffect(() => {
     axios.get("https://fakestoreapi.com/products")
       .then(res => {
+ 
         const filtered = res.data.filter(product => product.category === name);
         setCategoryProducts(filtered);
       })

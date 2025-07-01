@@ -14,6 +14,7 @@ const Home = () => {
   useEffect(() => {
     axios.get("https://fakestoreapi.com/products")
       .then(res => {
+        console.log(res.data)
         setProducts(res.data);
         const uniqueCategories = [...new Set(res.data.map(p => p.category))];
         setCategories(uniqueCategories);
